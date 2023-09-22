@@ -329,25 +329,113 @@ img{
 
 .work {
     text-align: center;
+   
+  }
+  .topping{
+    margin-top: 10px;
+  
   }
   
   .work_container {
     row-gap: 2rem;
+   
   }
   
   .work_img {
     box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
     border-radius: 0.5rem;
     overflow: hidden;
+    justify-content: center;
+   
+  }
+  .projects{
+    border: 2px solid black;
+    border-radius: 10px;
   }
   
   .work_img img {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     transition: 1s;
     cursor: pointer;
+   
+   
+   
+
+   
   }
   
   .work_img img:hover {
     transform: scale(1.1);
+  }
+  .project_title{
+    height: 30px;
+    width: 100%;
+    padding: 3px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size:large;
+    background-color:whitesmoke;
+    border: none;
+    border-radius: 5px;
+    
+  }
+
+  .boxer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: none;
+    background-color:whitesmoke;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    padding: 2px;
+
+    gap: 5px;
+  }
+  .box1 {
+    width: 48%;
+    justify-content: center;
+    height: 40px;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    margin: 1px;
+    padding: 10px;
+    font-size: medium;
+    color: #fff;
+    font-weight: bold;
+
+  }
+  .box1:hover{
+    cursor: pointer;
+  }
+  .box2 {
+    width: 48%;
+    height: 40px;
+   
+    background-color:pink;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 1px;
+    font-size: medium;
+    color: #fff;
+    font-weight: bold;
+
+
+  }
+  .box2:hover{
+    cursor: pointer;
   }
 
 

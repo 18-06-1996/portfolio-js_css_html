@@ -25,3 +25,27 @@ function linkAction(){
 }
 
 navLink.forEach(n => n.addEventListener('click',linkAction))
+
+
+
+
+  
+function sendEmail(){
+  
+  let name =  document.getElementById("name").value ;
+  let email =  document.getElementById("email").value ;
+  let mobile = document.getElementById("mobile").value ;
+  let message = document.getElementById("message").value;
+let body =  "Name: " + name + "<br/> Email: " + email + "<br/> Phone No : " + mobile + "<br/> Message : " +  message ;
+
+  Email.send({
+    
+    SecureToken : "311ebcd9-5b3d-4ab0-8525-017521231601",
+    To : "karthick18696@gmail.com",
+     From : "karthick18696@gmail.com",
+    Subject : "This message from your Portfolio",
+    Body : body
+  }).then(
+  message => alert(message)
+  );
+}
